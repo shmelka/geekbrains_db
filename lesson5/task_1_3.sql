@@ -5,5 +5,4 @@
  * Однако, нулевые запасы должны выводиться в конце, после всех записей.
  */
 
-
 SELECT value from storehouses_products ORDER BY CASE WHEN value = 0 THEN 9999999 ELSE value END
